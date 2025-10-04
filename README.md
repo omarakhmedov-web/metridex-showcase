@@ -1,34 +1,46 @@
-[README.md](https://github.com/user-attachments/files/22704523/README.md)
+[README_FINAL_2025-10-04_22-42.md](https://github.com/user-attachments/files/22704584/README_FINAL_2025-10-04_22-42.md)
 # Metridex — Showcase
 
-**On‑chain risk intelligence** for Web3. This repository is a **public showcase** used for hackathons and partner review.
-It includes safe documentation, screenshots, and a mock API. **No proprietary logic** is published here.
+**On-chain Risk Intelligence for Web3.**  
+Metridex helps investors and DeFi users identify potential scam projects before they invest.  
+This repository is a **public showcase** for hackathon evaluation — safe, self-contained, and without proprietary logic.
 
-- Website: https://metridex.com
-- Telegram bot: https://t.me/MetridexBot
-- Demo video: *(add link)*
-- Contact: contact@metridex.com
+- **Website:** https://metridex.com  
+- **Telegram Bot:** https://t.me/MetridexBot  
+- **Public Demo (mock):** https://metridex-showcase.onrender.com  
+- **GitHub:** https://github.com/<your-username>/metridex-showcase  
+- **Contact:** contact@metridex.com
 
-## Public demo (mock)
+---
 
-This repository includes a **mock API** for demonstration purposes only.
+## 🔍 Public Demo (mock API)
 
-- Health:  
-  https://metridex-showcase-demo.onrender.com/healthz
-- QuickScan (sample JSON):  
-  https://metridex-showcase-demo.onrender.com/quickscan?chain=ethereum&address=0x6982508145454Ce325dDbE47a25d4ec3d2311933
+This demo API illustrates how Metridex QuickScan works.  
+It provides a static, safe JSON response for judges and partners to test.
 
-**Disclaimer:** Static mock response. Production API and internal datasets are private.
+- **Health:**  
+  https://metridex-showcase.onrender.com/healthz
+- **QuickScan (sample JSON):**  
+  https://metridex-showcase.onrender.com/quickscan?chain=ethereum&address=0x6982508145454Ce325dDbE47a25d4ec3d2311933
 
-## Quick start (local)
+> **Disclaimer:** This is a static mock response.  
+> The production API, algorithms, and datasets are private and used only in the live Metridex system.
+
+---
+
+## ⚙️ Quick Start (local)
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 gunicorn server_stub:app --bind 0.0.0.0:$PORT --workers 1 --timeout 120
-# or simply: python server_stub.py
+# or simply:
+python server_stub.py
 ```
 
-## Security & Licensing
-No secrets or keys are stored here.  
-See `LICENSE`: Evaluation Only / No Commercial Use.
+---
+
+## 🛡️ Security & Licensing
+
+No secrets, API keys, or internal datasets are stored here.  
+See `LICENSE`: **Evaluation Only / No Commercial Use.**
