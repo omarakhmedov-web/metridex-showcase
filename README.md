@@ -1,4 +1,4 @@
-[README_FINAL_FIXED_2025-10-04_22-45.md](https://github.com/user-attachments/files/22704587/README_FINAL_FIXED_2025-10-04_22-45.md)
+[README_FINAL_REAL_2025-10-04_22-48.md](https://github.com/user-attachments/files/22704591/README_FINAL_REAL_2025-10-04_22-48.md)
 # Metridex — Showcase
 
 **On-chain Risk Intelligence for Web3.**  
@@ -8,7 +8,7 @@ This repository is a **public showcase** for hackathon evaluation — safe, self
 - **Website:** https://metridex.com  
 - **Telegram Bot:** https://t.me/MetridexBot  
 - **Public Demo (mock):** https://metridex-showcase.onrender.com  
-- **GitHub:** [https://github.com/metridex/metridex-showcase](https://github.com/metridex/metridex-showcase)  
+- **GitHub:** [https://github.com/omarakhmedov-web/metridex-showcase](https://github.com/omarakhmedov-web/metridex-showcase)  
 - **Contact:** contact@metridex.com
 
 ---
