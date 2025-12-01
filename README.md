@@ -1,30 +1,30 @@
-[README_METRIDEX_SHOWCASE_CHAINLINK.md](https://github.com/user-attachments/files/23866316/README_METRIDEX_SHOWCASE_CHAINLINK.md)
+[Uploading README_METRIDEX_SHOWCASE_CHAINLINK_FULL.md…]()
 # Metridex — Showcase
 
 **On-chain Risk Intelligence for Web3.**  
 Metridex delivers fast, reliable risk assessments for tokens, LPs, and dApps — helping traders, protocols, and ecosystems stay safe.
 
 This repository is a **public showcase for grants, partner evaluation, and ecosystem due diligence**.  
-It contains **no proprietary logic**, only safe mock/demo components and API stubs.
+It contains **no proprietary logic**, only safe mock/demo components.
 
-- **Website (QuickScan overview):** https://metridex.com  
-- **Articles (methodology & signals):** https://metridex.com/articles.html  
-- **Telegram Bot (live product):** https://t.me/MetridexBot  
+- **Website:** https://metridex.com  
+- **Telegram Bot:** https://t.me/MetridexBot  
+- **Arbitrum-focused QuickScan (primary demo domain):** https://metridex.com/quickscan  
 - **Showcase API (mock):** https://metridex-showcase.onrender.com  
-- **GitHub (this repo):** https://github.com/omarakhmedov-web/metridex-showcase  
+- **GitHub:** https://github.com/omarakhmedov-web/metridex-showcase  
 - **Contact:** contact@metridex.com
 
 ---
 
-## 🌐 Ecosystem Focus
+## 🔍 Arbitrum & Orbit Chain Focus
 
-Metridex is chain-agnostic, but we maintain ecosystem-specific adapters and demos.  
-This repo is used as a static, safe demonstration for reviewers from different ecosystems, including oracle networks such as Chainlink:
+Metridex is being actively adapted for:
 
-- **Arbitrum One** — full QuickScan support in production, low-latency API, DEX/pair coverage  
+- **Arbitrum One** — full QuickScan support, low-latency API, DEX/pair coverage  
 - **Arbitrum Nova / Stylus-ready chains** — lightweight endpoints  
-- **Orbit custom L3s** — config-based chain onboarding (Orbit Chain Adapter Kit)  
-- **Oracle networks (e.g. Chainlink)** — design notes and mock adapters that show how QuickScan can consume price feeds, Proof-of-Reserve style data, or other oracle signals as part of its risk checks (shared here at a high level only)
+- **Orbit custom L3s** — config-based chain onboarding (Orbit Chain Adapter Kit)
+
+This repo provides a **safe, static demonstration** for reviewers.
 
 ---
 
@@ -39,19 +39,6 @@ This endpoint simulates how the real QuickScan API responds.
 
 > **Disclaimer:**  
 > Mock only. Production API, risk algorithms, on-chain intel, domain scanners, and LP analyzers are private.
-
----
-
-## 🔗 Oracle & Chainlink Integration (Design Notes)
-
-Metridex is built to sit next to existing market data and oracle layers rather than replace them.  
-In this showcase repo we may include, from time to time:
-
-- simple interface examples for consuming external data feeds (e.g. price or PoR feeds)  
-- sketches of how those feeds map into QuickScan risk flags and thresholds  
-- dashboard or bot mockups that show combined “price + risk” views for end-users
-
-All such examples are deliberately limited to high-level code or pseudocode, with **no secrets, API keys, or production integration details**.
 
 ---
 
@@ -70,4 +57,19 @@ python server_stub.py
 ## 🛡️ Security & Licensing
 
 This repository contains **no secrets, API keys, ML models, or internal datasets**.  
-It is licensed strictly for **Evaluation Only / Non-Commercial Use**.
+It is licensed strictly for **Evaluation Only / Non‑Commercial Use**.
+
+---
+
+## 🔗 Oracle & Chainlink Integration (Design Notes)
+
+Metridex is designed to sit alongside existing market data and oracle layers rather than replace them.
+
+For Chainlink and other oracle networks, we are exploring and documenting:
+
+- simple interface examples for consuming external price and Proof-of-Reserve style feeds;
+- how these feeds can be turned into additional risk flags and thresholds inside QuickScan;
+- basic dashboards or bot flows that show combined “price + risk” views for end-users.
+
+All such examples in this showcase stay strictly high-level: no secrets, no production keys, and no proprietary risk logic. This README and the accompanying stubs are meant only to illustrate the integration surface for reviewers and partners.
+
