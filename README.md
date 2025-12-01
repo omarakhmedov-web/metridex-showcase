@@ -1,70 +1,61 @@
-[README_METRIDEX_L2_SHOWCASE.md](https://github.com/user-attachments/files/23842459/README_METRIDEX_L2_SHOWCASE.md)
-# Metridex — On-Chain Risk Intelligence (Showcase)
+[README_METRIDEX_SHOWCASE_CHAINLINK.md](https://github.com/user-attachments/files/23866316/README_METRIDEX_SHOWCASE_CHAINLINK.md)
+# Metridex — Showcase
 
-**Fast, reliable on-chain risk analytics for EVM ecosystems.**
-Metridex helps traders, protocols, and L2 ecosystems identify risk signals early — LP locks, holder concentration, domain/SSL issues, contract metadata, liquidity anomalies, and more.
+**On-chain Risk Intelligence for Web3.**  
+Metridex delivers fast, reliable risk assessments for tokens, LPs, and dApps — helping traders, protocols, and ecosystems stay safe.
 
-This repository is a **safe public showcase** used for:
-- grant applications  
-- ecosystem due diligence  
-- partner integrations  
-- technical review by L2 foundations  
+This repository is a **public showcase for grants, partner evaluation, and ecosystem due diligence**.  
+It contains **no proprietary logic**, only safe mock/demo components and API stubs.
 
-It contains **no proprietary engine**, only demo logic and sample outputs.
+- **Website (QuickScan overview):** https://metridex.com  
+- **Articles (methodology & signals):** https://metridex.com/articles.html  
+- **Telegram Bot (live product):** https://t.me/MetridexBot  
+- **Showcase API (mock):** https://metridex-showcase.onrender.com  
+- **GitHub (this repo):** https://github.com/omarakhmedov-web/metridex-showcase  
+- **Contact:** contact@metridex.com
 
 ---
 
-## 🚀 Ecosystem Focus
+## 🌐 Ecosystem Focus
 
-Metridex is actively adapting its QuickScan engine for major L2s:
+Metridex is chain-agnostic, but we maintain ecosystem-specific adapters and demos.  
+This repo is used as a static, safe demonstration for reviewers from different ecosystems, including oracle networks such as Chainlink:
 
-### Mantle Network
-- QuickScan support for Mantle-native tokens  
-- low-latency scan endpoints  
-- integration layer for Mantle DEX pairs  
-- foundation-ready dashboard mockups  
-
-### Optimism
-- OP Stack–ready QuickScan endpoints  
-- security-focused user flows  
-- Rapid Scan API preview  
-
-### Arbitrum & Orbit Chains
-- Arbitrum One full coverage  
-- Nova & Stylus-compatible endpoints  
-- Orbit Chain Adapter Kit (config-based onboarding)
-
-This repository demonstrates the **public, non-sensitive** parts of the project.
+- **Arbitrum One** — full QuickScan support in production, low-latency API, DEX/pair coverage  
+- **Arbitrum Nova / Stylus-ready chains** — lightweight endpoints  
+- **Orbit custom L3s** — config-based chain onboarding (Orbit Chain Adapter Kit)  
+- **Oracle networks (e.g. Chainlink)** — design notes and mock adapters that show how QuickScan can consume price feeds, Proof-of-Reserve style data, or other oracle signals as part of its risk checks (shared here at a high level only)
 
 ---
 
 ## 🧪 Public Demo (Mock API)
 
-These endpoints simulate the behavior of the production QuickScan API.
+This endpoint simulates how the real QuickScan API responds.
 
 - **Health:**  
   https://metridex-showcase.onrender.com/healthz
-
 - **QuickScan (sample JSON):**  
   https://metridex-showcase.onrender.com/quickscan?chain=ethereum&address=0x6982508145454Ce325dDbE47a25d4ec3d2311933
 
-> **Note:**  
-> Production risk scoring, LP/holder engine, domain intelligence, and on-chain inspection modules remain private.
+> **Disclaimer:**  
+> Mock only. Production API, risk algorithms, on-chain intel, domain scanners, and LP analyzers are private.
 
 ---
 
-## 📦 Contents of This Repository
+## 🔗 Oracle & Chainlink Integration (Design Notes)
 
-- server_stub.py — demo-only server  
-- mock QuickScan responses  
-- static showcases for reviewers  
-- no private logic, no API keys, no secrets  
+Metridex is built to sit next to existing market data and oracle layers rather than replace them.  
+In this showcase repo we may include, from time to time:
 
-This repo is intentionally minimal: only what ecosystems need to validate feasibility and integration flow.
+- simple interface examples for consuming external data feeds (e.g. price or PoR feeds)  
+- sketches of how those feeds map into QuickScan risk flags and thresholds  
+- dashboard or bot mockups that show combined “price + risk” views for end-users
+
+All such examples are deliberately limited to high-level code or pseudocode, with **no secrets, API keys, or production integration details**.
 
 ---
 
-## ⚙️ Run Locally (Demo Mode)
+## ⚙️ Local Run (Demo Only)
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
@@ -78,13 +69,5 @@ python server_stub.py
 
 ## 🛡️ Security & Licensing
 
-This repository:
-- contains **no sensitive code**,  
-- does **not** include the production QuickScan engine,  
-- is licensed for **Evaluation Only / Non-Commercial Use**.
-
-For questions, collaboration, or ecosystem integrations:
-
-- Website: https://metridex.com  
-- Bot: https://t.me/MetridexBot  
-- Email: contact@metridex.com  
+This repository contains **no secrets, API keys, ML models, or internal datasets**.  
+It is licensed strictly for **Evaluation Only / Non-Commercial Use**.
