@@ -1,3 +1,4 @@
+[Uploading README_METRIDEX_L2_SHOWCASE_CORE.md…]()
 [README_METRIDEX_L2_SHOWCASE_CHAINLINK.md](https://github.com/user-attachments/files/23866439/README_METRIDEX_L2_SHOWCASE_CHAINLINK.md)
 # Metridex — On-Chain Risk Intelligence (Showcase)
 
@@ -33,6 +34,13 @@ Metridex is actively adapting its QuickScan engine for major L2s:
 - Arbitrum One full coverage  
 - Nova & Stylus-compatible endpoints  
 - Orbit Chain Adapter Kit (config-based onboarding)
+
+### Zircuit (zk-Rollup)
+
+- QuickScan support for Zircuit-native tokens and pools  
+- low-latency scan endpoints adapted for Zircuit rollup infrastructure  
+- integration stubs for Zircuit DEX / LP pairs  
+- sample flows for using QuickScan as a safety layer in Zircuit wallets, bots, and dashboards  
 
 This repository demonstrates the **public, non-sensitive** parts of the project.
 
@@ -86,6 +94,8 @@ gunicorn server_stub:app --bind 0.0.0.0:$PORT --workers 1 --timeout 120
 # or:
 python server_stub.py
 ```
+
+---
 
 ---
 
