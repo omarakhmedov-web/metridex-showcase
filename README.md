@@ -1,12 +1,9 @@
-[README_METRIDEX_L2_SHOWCASE_CORE (2).md](https://github.com/user-attachments/files/23914876/README_METRIDEX_L2_SHOWCASE_CORE.2.md)
-[README_METRIDEX_L2_SHOWCASE_CHAINLINK.md](https://github.com/user-attachments/files/23866439/README_METRIDEX_L2_SHOWCASE_CHAINLINK.md)
 # Metridex — On-Chain Risk Intelligence (Showcase)
 
 **Fast, reliable on-chain risk analytics for EVM ecosystems.**
 Metridex helps traders, protocols, and L2 ecosystems identify risk signals early — LP locks, holder concentration, domain/SSL issues, contract metadata, liquidity anomalies, and more.
 
 This repository is a **safe public showcase** used for:
-- grant applications  
 - ecosystem due diligence  
 - partner integrations  
 - technical review by L2 foundations  
@@ -17,16 +14,13 @@ It contains **no proprietary engine**, only demo logic and sample outputs.
 
 ## 🚀 Ecosystem Focus
 
-Metridex is designed as a **chain-agnostic QuickScan layer** for EVM ecosystems.
+Metridex is designed as a **chain‑agnostic QuickScan layer** for EVM ecosystems.
 
-Current priority L2s and rollups include:
-- Mantle Network  
-- Optimism (OP Stack)  
-- Arbitrum & Orbit chains  
-- Zircuit (zk-rollup, in progress)  
+The production bot already runs on several major L1 and L2 networks and can be adapted to new EVM-compatible ecosystems through configurable RPC, DEX/scan integrations, and domain intelligence checks.
 
-This repository demonstrates only the **public, non-sensitive** parts of the project and how the QuickScan surface can be adapted per ecosystem without exposing proprietary risk logic.
+In this showcase we focus not on specific networks, but on how the QuickScan surface looks and behaves: what data it aggregates, how the risk snapshot is formed, and how it can be consumed by traders, bots, wallets, and dashboards.
 
+This repository demonstrates only the **public, non‑sensitive** parts of the project and how the QuickScan surface can be adapted per ecosystem without exposing proprietary risk logic.
 ---
 
 
@@ -64,8 +58,6 @@ Metridex QuickScan already provides a practical, production-ready feature set fo
 - Stateless inline buttons (no зависания при повторных нажатиях) and clear “Processing…” states for heavier checks.  
 - Multi‑language groundwork (EN/RU today, extendable to other languages).
 
-
-
 ### Watchlists & alerts (live, beta)
 
 - `/watch <address>` — добавляет токен/пул в персональный watchlist.  
@@ -73,7 +65,7 @@ Metridex QuickScan already provides a practical, production-ready feature set fo
 - Быстрое **mute / unmute** (в т.ч. на 24 часа) для отключения спама по конкретному токену.  
 - Удаление из watchlist и подсчёт активных наблюдаемых позиций (*“Total: N”*).  
 
-Алерты приходят в Telegram напрямую, чтобы трейдер видел изменения по отслеживаемым активам без открытия графиков или сканеров.
+Alerts are delivered directly in Telegram, so a trader can see changes for watched assets without opening charts or external scanners.
 ---
 
 ## 🧭 Roadmap — what we are building next
@@ -85,7 +77,7 @@ Metridex is not just a single QuickScan endpoint; it is a roadmap toward a full 
 - **Watchlists & alerts:** user‑level watchlists for tokens/pools with Telegram notifications on key risk events.  
 - **Deeper LP analytics:** better handling of LP locks, vesting contracts, and multi‑pool setups (incl. Uniswap v3‑style positions).  
 - **Extended chain coverage:** more EVM L2s and rollups (beyond ETH/BSC/Polygon/Base/Arbitrum/Optimism) with consistent UX.  
-- **Partner integrations:** embeddable QuickScan widgets and APIs for wallets, DEXes, Telegram‑ботов и аналитических панелей.
+- **Partner integrations:** embeddable QuickScan widgets and APIs for wallets, DEXes, Telegram bots and analytics dashboards.
 
 ### Longer‑term vision
 - **Metridex as a “trust oracle”:** standardised risk snapshots that can be consumed by bots, front‑ends, and protocols.  
